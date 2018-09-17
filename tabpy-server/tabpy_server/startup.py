@@ -16,7 +16,7 @@ elif sys.platform in ['darwin', 'linux2', 'linux']:
         subprocess.call(['python', 'prod_fraud_model.py'])
     else:
         subprocess.Popen(['sh', './startup.sh'])
-        subprocess.call(['python', os.getenv('FRAUD_MODEL')])
+        subprocess.call(['python', 'prod_fraud_model.py'])
 
 else:
     print('Operating system not recognized')
