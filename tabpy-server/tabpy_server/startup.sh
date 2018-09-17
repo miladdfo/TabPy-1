@@ -1,5 +1,5 @@
 CONDA_ENVIRONMENT=Tableau-Python-Server
-SCRIPT_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+SCRIPT_DIR="$(cd $(dirname $0) && pwd)"
 echo $SCRIPT_DIR
 CONDA_DEFAULT_ENV=$CONDA_ENVIRONMENT
 export TABPY_STATE_PATH=$SCRIPT_DIR
