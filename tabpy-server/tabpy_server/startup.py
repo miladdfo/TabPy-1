@@ -20,3 +20,5 @@ elif sys.platform in ['darwin', 'linux2', 'linux']:
 
 else:
     print('Operating system not recognized')
+
+print("I am finished running startup.py!")
