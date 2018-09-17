@@ -13,8 +13,10 @@ if sys.platform == 'win32':
 elif sys.platform in ['darwin', 'linux2', 'linux']:
     if len(sys.argv) >= 2:
         subprocess.Popen(['sh', './startup.sh', sys.argv[1]])
+        subprocess.call(['python', os.getenv('FRAUD_MODEL')])
     else:
         subprocess.Popen(['sh', './startup.sh'])
+        subprocess.call(['python', os.getenv('FRAUD_MODEL')])
 
 else:
     print('Operating system not recognized')
