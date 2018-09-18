@@ -3,11 +3,10 @@ import sys
 import subprocess
 import os
 
+model = "python "+os.path.dirname(os.path.realpath(__file__))+'/example.py'
+server = "python "+os.path.dirname(os.path.realpath(__file__))+'/tabpy.py --port 9004'
 
-if sys.platform in ['darwin', 'linux2', 'linux']:
-    subprocess.call(['python', os.path.dirname(os.path.realpath(__file__))+'/example.py'])
-    subprocess.call(['python', os.path.dirname(os.path.realpath(__file__))+'/tabpy.py','--port','9004'])
-else:
-    print('Operating system not recognized')
+p = subprocess.Popen(model , shell=True, stdout=subprocess.PIPE)
+p = subprocess.Popen(server , shell=True, stdout=subprocess.PIPE)
 
 print("I am finished running startup.py!")
