@@ -1,4 +1,3 @@
-#!/usr/bin/python
 import tabpy_client
 from time import sleep
 
