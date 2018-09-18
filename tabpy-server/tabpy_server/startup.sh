@@ -20,5 +20,5 @@ else
   cp "$SCRIPT_DIR"/state.ini.template "$SCRIPT_DIR"/state.ini
   echo "Using initial state.ini"
 fi
-python "$SCRIPT_DIR"/tabpy.py --port $PORT
 echo "here"
+python "$SCRIPT_DIR"/tabpy.py --port $PORT
