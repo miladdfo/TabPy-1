@@ -3,15 +3,15 @@ import sys
 import subprocess
 import os
 
-print (os.path.realpath(__file__))
+print (os.path.abspath(os.path.join(yourpath, os.pardir)))
 
 if sys.platform in ['darwin', 'linux2', 'linux']:
     if len(sys.argv) >= 2:
-        subprocess.call(['python', os.path.realpath(__file__)+'/tabpy.py','--port','9004'])
-        subprocess.call(['python', os.path.realpath(__file__)+'/example.py'])
+        subprocess.call(['python', os.path.abspath(os.path.join(yourpath, os.pardir))+'/tabpy.py','--port','9004'])
+        subprocess.call(['python', os.path.abspath(os.path.join(yourpath, os.pardir))+'/example.py'])
     else:
-        subprocess.call(['python', os.path.realpath(__file__)+'/tabpy.py','--port','9004'])
-        subprocess.call(['python', os.path.realpath(__file__)+'/example.py'])
+        subprocess.call(['python', os.path.abspath(os.path.join(yourpath, os.pardir))+'/tabpy.py','--port','9004'])
+        subprocess.call(['python', os.path.abspath(os.path.join(yourpath, os.pardir))+'/example.py'])
 
 else:
     print('Operating system not recognized')
