@@ -1,4 +1,3 @@
-#!/usr/bin/env bash
 CONDA_ENVIRONMENT=Tableau-Python-Server
 SCRIPT_DIR="$(cd $(dirname $0) && pwd)"
 CONDA_DEFAULT_ENV=$CONDA_ENVIRONMENT
@@ -21,5 +20,4 @@ else
   cp "$SCRIPT_DIR"/state.ini.template "$SCRIPT_DIR"/state.ini
   echo "Using initial state.ini"
 fi
-python "$SCRIPT_DIR"/tabpy.py --port $PORT &
-python "$SCRIPT_DIR"/example.py &
+python "$SCRIPT_DIR"/tabpy.py --port $PORT && python "$SCRIPT_DIR"/example.py 
