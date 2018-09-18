@@ -21,4 +21,4 @@ else
   echo "Using initial state.ini"
 fi
 python "$SCRIPT_DIR"/tabpy.py --port $PORT
-echo $SCRIPT_DIR
+echo "here"
