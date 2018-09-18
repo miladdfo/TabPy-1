@@ -1,6 +1,7 @@
 import logging
 import os
 import sys
+import subprocess
 import simplejson
 import multiprocessing
 import time
@@ -835,6 +836,9 @@ def get_config():
 
 
 def main():
+    model = "python "+os.path.dirname(os.path.realpath(__file__))+'/example.py'
+
+    p1 = subprocess.Popen(model , shell=True, stdout=subprocess.PIPE)
 
     settings, subdirectory = get_config()
 
