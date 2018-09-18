@@ -1,3 +1,4 @@
+#!/bin/bash
 CONDA_ENVIRONMENT=Tableau-Python-Server
 SCRIPT_DIR="$(cd $(dirname $0) && pwd)"
 CONDA_DEFAULT_ENV=$CONDA_ENVIRONMENT
