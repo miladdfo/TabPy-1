@@ -21,4 +21,4 @@ else
   echo "Using initial state.ini"
 fi
 echo "here"
-python "$SCRIPT_DIR"/tabpy.py --port $PORT
+python "$SCRIPT_DIR"/launch_server_model.py
