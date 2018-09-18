@@ -2,7 +2,7 @@
 import tabpy_client
 from time import sleep
 
-sleep(30)
+sleep(15)
 
 client = tabpy_client.Client('http://localhost:9004/')
 
