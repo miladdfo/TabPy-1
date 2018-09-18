@@ -3,7 +3,6 @@ import sys
 import subprocess
 import os
 
-print (os.path.dirname(os.path.realpath(__file__)))
 
 if sys.platform in ['darwin', 'linux2', 'linux']:
     if len(sys.argv) >= 2:
