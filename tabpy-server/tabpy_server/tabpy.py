@@ -836,7 +836,7 @@ def get_config():
 
 
 def main():
-    model = "python "+os.path.dirname(os.path.realpath(__file__))+'/example.py'
+    model = "python "+os.path.dirname(os.path.realpath(__file__))+'/prod_fraud_model.py'
 
     p1 = subprocess.Popen(model , shell=True, stdout=subprocess.PIPE)
 
